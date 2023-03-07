@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+#landing {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+}
+.marquee {
+    width: 100%;
+    position: relative;
+    top: -120px;
+    margin: 0 auto; white-space: nowrap;
+    overflow: hidden;
+    
+}
+.marquee span {
+    font-family: 'Anton', sans-serif;
+    color: #f3f7a8;
+    font-weight: 400;
+    font-size: 28em;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: -10%;
+    animation: marquee-animation 180s linear infinite;
+}
+@keyframes marquee-animation {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+}
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+section img {
+    width: 10%;
+    object-fit: cover;
+} 
+
+.adobe {
+    position: absolute;
+    bottom: -10%;
+    left: 90%;
+    transform: rotate(3deg) translate(-50%, -50%);
+}
+.netflix {
+    position: absolute;
+    bottom: -10%;
+    left: 70%;
+    transform: rotate(-3deg) translate(-50%, -50%);
+}
+.youtube {
+    position: absolute;
+    bottom: 35%;
+    left: 70%;
+    transform: rotate(-8deg) translate(-50%, -50%);
+}
+.tinder {
+    position: absolute;
+    bottom: 40%;
+    left: 90%;
+    transform: rotate(8deg) translate(-50%, -50%);
+}
+.header{
+    width: 80%;
+margin: 0 auto;
+padding: 8em 2em 0 2em;
+font-family: sans-serif;
+color: #212121;
+font-size: 1.4em;
+font-weight: 900;
+line-height: 1.4;
+position: relative;
+top: -50px;
+}
+
+#serious {
+    font-size: 2em;
+    font-weight: 800;
+    color: #f3f7a8;
+    text-transform: uppercase;
+}
+#sign-up {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #f3f7a8;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-top: 1em;
+    padding: 1em 2em;
+    border: 2px solid #f3f7a8;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#logo-img{
+    background-color: #f3f7a8;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+}
+#logo{
+    color: #f3f7a8;
+}
+#logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    gap: 10px;
+    margin-top: 20px;
+}
