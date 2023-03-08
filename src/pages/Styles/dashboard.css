@@ -1,7 +1,7 @@
 #dashboard {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     background-color: #212121;
     height: 100vh;
     width: 100vw;
@@ -9,6 +9,7 @@
     position: absolute;
     left: 0;
     z-index: 0;
+    gap: 20px;
 }
 #dashboard-subslist{
     background-color: black;
@@ -71,4 +72,14 @@
 #horizontal-rule{
     width: 400px;
     margin: 20px;
+}
+#dashboard-column-2{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 90vh;
+}
+#ad {
+    width: 700px;
+    border-radius: 20px;
 }

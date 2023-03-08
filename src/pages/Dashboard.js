@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { Subslist } from "../components/Subslist";
 import "./Styles/dashboard.css";
 import { AddLibrary } from "./Landing";
+import { AcSubslist } from "../components/Activelist";
 
 export const Dashboard = () => {
   
@@ -38,6 +39,38 @@ export const Dashboard = () => {
       logo: "https://clouddevs.com/3dbay/files/preview/960x960/11653407779f7hrmbpckskwtmizpwffnsxehxfwhd5hvlrpyxagqeddhv3hgj249h0iamgayaqhkqpim3cbhp4iepg5ktskbgvi8r8bxffih6lg.png",
     },
   ]);
+  const [activeSubs, setActiveSubs] = React.useState([
+    {
+      name: "Netflix",
+      price: "$12.99",
+      logo: "https://cdn3d.iconscout.com/3d/free/thumb/netflix-2950136-2447898.png",
+        color: "#e50914",
+    },
+    {
+      name: "BornPub",
+      price: "$1.00",
+      logo: "https://clouddevs.com/3dbay/files/preview/960x960/11653407779f7hrmbpckskwtmizpwffnsxehxfwhd5hvlrpyxagqeddhv3hgj249h0iamgayaqhkqpim3cbhp4iepg5ktskbgvi8r8bxffih6lg.png",
+        color: "#e50914",
+    },
+    {
+      name: "Tinder",
+      price: "$13.99",
+      logo: "https://cdn3d.iconscout.com/3d/free/thumb/netflix-2950136-2447898.png",
+        color: "#e50914",
+    },
+    {
+      name: "Hulu",
+      price: "$12.99",
+      logo: "https://clouddevs.com/3dbay/files/preview/960x960/11653407779f7hrmbpckskwtmizpwffnsxehxfwhd5hvlrpyxagqeddhv3hgj249h0iamgayaqhkqpim3cbhp4iepg5ktskbgvi8r8bxffih6lg.png",
+        color: "#e50914",
+    },
+    {
+      name: "Disney+",
+      price: "$12.99",
+      logo: "https://clouddevs.com/3dbay/files/preview/960x960/11653407779f7hrmbpckskwtmizpwffnsxehxfwhd5hvlrpyxagqeddhv3hgj249h0iamgayaqhkqpim3cbhp4iepg5ktskbgvi8r8bxffih6lg.png",
+        color: "#e50914",
+    },
+  ]);
   return (
     <>
     <div id="dashboard">
@@ -56,7 +89,12 @@ export const Dashboard = () => {
      
       </div>
 
-    
+    <div id="dashboard-column-2">
+        <img id="ad" src="https://images.ctfassets.net/4cd45et68cgf/5ZVnTR7jyrRs0lePAlVT71/0a7c103de12f7a4c0b6c3b6edd535298/Ads_Plan_Blog_Header_Image.png?w=2560"/>
+        <div id="active-subs">
+        <AcSubslist activeSubs={activeSubs}/>
+        </div>
+    </div>
       </div>
       {
         AddLibrary('tilt.js')
