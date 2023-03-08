@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 #landing {
-    width: 100vw;
-    height: 100vh;
     background: #000;
     padding: 0;
     margin: 0;
     overflow: hidden;
     color: white;
+    height: 101vh;
 }
 .marquee {
     width: 100%;
     position: relative;
-    top: -120px;
+    top: -70px;
     margin: 0 auto; white-space: nowrap;
     overflow: hidden;
     
@@ -20,11 +19,11 @@
     font-family: 'Anton', sans-serif;
     color: #f3f7a8;
     font-weight: 400;
-    font-size: 28em;
+    font-size: 23em;
     text-transform: uppercase;
     display: inline-block;
     padding-left: -10%;
-    animation: marquee-animation 180s linear infinite;
+    animation: marquee-animation 460s linear infinite;
 }
 @keyframes marquee-animation {
     0% {
@@ -44,22 +43,22 @@ section img {
     object-fit: cover;
 } 
 
-.adobe {
-    position: absolute;
-    bottom: -10%;
-    left: 90%;
-    transform: rotate(3deg) translate(-50%, -50%);
-}
 .netflix {
     position: absolute;
-    bottom: -10%;
-    left: 70%;
+    bottom: 1%;
+    left:60%;
+    transform: rotate(3deg) translate(-50%, -50%);
+}
+.adobe {
+    position: absolute;
+    bottom: 1%;
+    left: 80%;
     transform: rotate(-3deg) translate(-50%, -50%);
 }
 .youtube {
     position: absolute;
     bottom: 35%;
-    left: 70%;
+    left: 60%;
     transform: rotate(-8deg) translate(-50%, -50%);
 }
 .tinder {
@@ -79,6 +78,8 @@ font-weight: 900;
 line-height: 1.4;
 position: relative;
 top: -50px;
+display: flex;
+flex-direction: column;
 }
 
 #serious {
@@ -99,6 +100,7 @@ top: -50px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: transparent;
 }
 #logo-img{
     background-color: #f3f7a8;

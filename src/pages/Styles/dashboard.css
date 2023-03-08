@@ -1,0 +1,74 @@
+#dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+#dashboard-subslist{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    overflow-y: scroll;
+    border-radius: 30px;
+    padding: 20px;
+}
+#background-dash {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#image-back{
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+
+}
+#amount {
+    height: 200px;
+    width: 350px;
+    background-color: black;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    align-items: start;
+    font-size: 3em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#dashboard-column-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#amount-label {
+    font-size: 0.3em;
+}
+#subslist-head {
+    font-size: 1.2em;
+    background-color: #f3f8af;
+    padding: 20px;
+    border-radius: 20px;
+}
+#horizontal-rule{
+    width: 400px;
+    margin: 20px;
+}

@@ -1,0 +1,31 @@
+#upcoming-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  
+}
+#upcoming-Subs{
+    padding: 30px;
+    background-color: #f3f8a9;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+#company-details {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2px;
+}
+#upcoming-price{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+#upcoming-logo {
+    width: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding: 5px;
+}
