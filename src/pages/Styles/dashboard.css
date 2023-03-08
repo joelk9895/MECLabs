@@ -11,6 +11,14 @@
     z-index: 0;
     gap: 20px;
 }
+*::-webkit-scrollbar {
+    border: none;
+    background-color: transparent;
+ } /* webkit browsers(safari, chrome) */
+
+*{
+    scrollbar-color: #404040b3 transparent; /*firefox*/
+ }
 #dashboard-subslist{
     background-color: black;
     display: flex;
