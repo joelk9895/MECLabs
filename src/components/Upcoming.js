@@ -9,7 +9,7 @@ function Subs({ upsubs }) {
         <label id="upcoming-name">{upsubs.name}</label>
         <label id="upcoming-date">{upsubs.date}</label>
       </div>
-      <label id="upcoming-price">{upsubs.price}</label>
+      <label id="upcoming-price">₹{upsubs.price}</label>
     </div>
   );
 }

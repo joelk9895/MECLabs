@@ -1,0 +1,23 @@
+#active-Subs-bod{
+    height: 180px;
+    min-width: 180px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: black;
+    color: white;
+}
+#active-logo{
+    width: 90px;
+    height: auto;
+}
+#activecompany-details {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
